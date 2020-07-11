@@ -80,3 +80,24 @@ Run Quality Checks
 
 #### 4.3 Data dictionary 
 Create a data dictionary for your data model. For each field, provide a brief description of what the data is and where it came from. You can include the data dictionary in the notebook or in a separate file.
+
+### Step 5: Complete Project Write Up
+* Clearly state the rationale for the choice of tools and technologies for the project. <br>
+Spark was chosen since it can easily handle large amounts of data.<br><br>
+
+* Propose how often the data should be updated and why.
+The data should be updated monthly. <br><br>
+
+
+* Write a description of how you would approach the problem differently under the following scenarios:
+
+  * The data was increased by 100x. <br>
+Use AWS EMR + S3 if the data was increased by 100x<br><br>
+
+
+  * The data populates dashboard that must be updated on a daily basis by 7am.<br>
+Use Apache Airflow<br><br>
+
+
+  * The database needed to be accessed by 100+ people.<br>
+Store parquet files in AWS S3, give read access to users
